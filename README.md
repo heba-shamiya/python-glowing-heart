@@ -1,6 +1,8 @@
 # ❤️ Python Glowing Heart Animation
 
 A creative coding project that uses Python to generate a glowing heart effect using mathematical equations, random particles, and Turtle graphics.
+<img width="504" height="512" alt="image" src="https://github.com/user-attachments/assets/72e80d04-0b32-4ef9-afd2-d6088ee83a70" />
+
 
 ## ✨ Features
 
@@ -10,14 +12,14 @@ A creative coding project that uses Python to generate a glowing heart effect us
 - Adjustable particle density, colors, and stroke lengths.
 - An exploration of mathematical art using Python.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - Python
 - Turtle
 - Math
 - Random
 
-## 🚀 How to Run
+##  How to Run
 
 ### Requirements
 
@@ -53,7 +55,7 @@ Experiment with the code to change:
 - The length and direction of the strokes.
 - The animation speed, if using the animated version.
 
-## 📚 What I Learned
+## What I Learned
 
 This project helped me explore how mathematical equations, coordinate geometry, randomness, loops, and graphics can work together to create visual effects.
 
