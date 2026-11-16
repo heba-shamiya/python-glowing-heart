@@ -6,10 +6,8 @@ import time
 s = t.Screen()
 s.setup(700, 700)
 s.bgcolor("black")
-s.tracer(0)
-
-# Use RGB color values between 0 and 1
 s.colormode(1.0)
+s.tracer(0)
 
 p = t.Turtle()
 p.hideturtle()
@@ -25,8 +23,8 @@ def heart(a, scale):
     ) * scale
     return x, y
 
-# First layer: many small glowing-looking strokes
-for i in range(10000):
+# First layer: small glowing strokes
+for i in range(5000):
     a = r.uniform(0, 2 * m.pi)
     sc = r.uniform(0.5, 15.5)
     x, y = heart(a, sc)
@@ -40,6 +38,7 @@ for i in range(10000):
         r.uniform(0.65, 0.85)
     )
     p.width(r.uniform(0.5, 1.2))
+
     p.penup()
     p.goto(x, y)
     p.pendown()
@@ -48,13 +47,13 @@ for i in range(10000):
         y + length * m.sin(ang)
     )
 
-    if i % 10 == 0:
+    if i % 20 == 0:
         s.update()
 
-    time.sleep(0.002)
+    time.sleep(0.0005)
 
-# Second layer: brighter strokes around the heart outline
-for i in range(3500):
+# Second layer: brighter strokes around the outline
+for i in range(3000):
     a = r.uniform(0, 2 * m.pi)
     x, y = heart(a, 16.0)
 
@@ -67,6 +66,7 @@ for i in range(3500):
         r.uniform(0.75, 0.95)
     )
     p.width(r.uniform(0.4, 0.9))
+
     p.penup()
     p.goto(
         x + r.uniform(-2, 2),
@@ -78,10 +78,11 @@ for i in range(3500):
         y + length * m.sin(ang)
     )
 
-    if i % 10 == 0:
+    if i % 20 == 0:
         s.update()
 
-    time.sleep(0.002)
+    time.sleep(0.0005)
 
 s.update()
 t.done()
+
